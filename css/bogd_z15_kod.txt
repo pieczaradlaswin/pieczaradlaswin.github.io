@@ -1,0 +1,32 @@
+<html>
+<head>
+<!-- 12.03.2021 Wiktoria Bogdziewicz !-->
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8"> </META>
+
+<link href="bogd_z15.css" rel="stylesheet" type="text/CSS">
+    </head>
+<body>
+	    <p> :o zdziwienie</p>
+		 :D ogromne szczescie 
+		<p> :) usmiech</p>
+		  ;( placz
+		<p> :/ rozczarowanie</p>
+		  :| brak emocji
+</body>
+</html>
+
+
+
+--css--
+
+
+
+body {
+color: rgb(54%,35%,80%);  
+font-size: 49px;
+ }
+ 
+ p {
+color:#67A45A; 
+font-size: 39px;
+ }

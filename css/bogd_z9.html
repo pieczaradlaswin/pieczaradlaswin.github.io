@@ -1,0 +1,78 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+	
+        <body>
+        <ol>
+           
+            <li><h2>Składnia teoretyczna    </h2></li>
+			<textarea cols="80" rows="6">
+    &lt;head> 
+        (...)  
+            &lt;link rel="Stylesheet" type="text/css" href="style.css" />  
+        (...) 
+    &lt;/head>
+            </textarea>
+			
+            <li><h2>  Gdzie wstawiany jest  styl zewnętrzny, jaki znacznik jest za to 
+			odpowiedzialny oraz ile razy może on występować w dokumencie, jako podłączenie stylu CSS? </h2></li>
+            Znacznik LINK może znajdować się tylko i wyłącznie w nagłówku dokumentu. (sekcja head ).  Można dołączyć dowolną liczbę zewnętrznych arkuszy stylów  - każdy jako osobny element - znacznik &lt;link rel="Stylesheet" />. 
+        
+            <li><h2> Jak jest najprostsza forma wstawiania stylu zewnętrznego<h2></li>
+            <textarea cols="80" rows="2">
+            &lt;link rel="Stylesheet" type="text/css" href="style.css"/> 
+            </textarea>
+			
+            <li><h2>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz 
+			jaka zasad musi być zachowana przy większej ilości dołączanych styli? </h2></li>
+            można dołączyć dowolną liczbę zewnętrznych arkuszy stylów  - każdy jako osobny element
+			&lt;link rel="Stylesheet" />.  Należy jedynie pamiętać, że plik będący zewnętrznym arkuszem 
+			stylów musi mieć rozszerzenie *.css
+            
+            <li><h2>Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, 
+			gdy te same style są definiowane w różnych arkuszach styli podłączone do tego samego arkusza. </h2></li>
+            W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później. 
+            
+            <li><h2>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego? </h2></li>
+            Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i edytowania wystarczy 
+			zwykły edytor tekst.
+            
+            <li><h2> Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS? </h2></li>
+            Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i edytowania 
+			wystarczy zwykły edytor tekst. Jednak można użyć bardziej rozwinięte edytory tekstu np. Visual Studio Code, 
+			czy też brackets (zalecany do edycji css), takie edytory automatycznie uzupełniają nam znaczniki tworzą 
+			podstawową stukture strony podświetlają znaczniki jak i błędy. Brackets ma opcję podglądu na żywo 
+			czyli podczas edycji widzimy odrazu na stronie jak się zmienia.
+            
+            <li><h2> Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli? </h2></li>
+            Posiada rozszerzenie .css
+            
+            <li><h2>Jakie są zalety zewnętrznego arkusza styli? </h2></li>
+            
+			<ol>
+            <li>Wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy</li>
+			
+            <li> Jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich stronach, 
+			możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez konieczności zmiany każdej strony osobno</li>
+            </ol>
+            
+            <li><h2>Uwagi na temat pisania w CSS.</h2></li>
+            Język CSS dopuszcza stosowanie zarówno dużych, jak i małych liter. 
+			Poprawnymi nazwami atrybutu są background, backGROUND oraz BACKground. 
+			Wstawienie białych znaków (spacje, tabulacje, znaki nowej linii) w arkuszu CSS 
+			nie ma wpływu na jego działanie. Dlatego możesz ułożyć wpisywane reguły CSS w taki sposób, 
+			aby były bardziej czytelne np. Komentarze w arkuszu stylów  pisze się używając znaków: /* 
+			(otworzenie komentarza) oraz */ (zamknięcie komentarza),  np.: /*to jest komentarz*/.  
+			Wszystko pomiędzy tymi znakami jest ignorowane przez przeglądarkę. 
+            
+ 
+            
+        </ol>
+    
+        
+        
+        
+        
+        </body>
+</html>

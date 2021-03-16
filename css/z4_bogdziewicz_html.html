@@ -1,0 +1,71 @@
+<html>
+<html>
+<head>
+ <meta charset="pl-PL">
+</head>
+<body>
+
+    <table>
+    <h1>1)<u>Zewnętrzny</u> arkusz stylów.</h1>
+        <tr>
+            <td> <textarea cols="80" rows="5">
+    <head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    </head>
+	
+            </textarea> </td> 
+        </tr>
+        </table>
+		
+        <table>
+        <h1>2)Styl <u>lokalny</u> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli
+dopisanie arkusza do wybranego bloku treści strony.</h1>
+        <tr>
+            <td> <textarea cols="80" rows="3">
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+            </textarea> </td> 
+        </tr>
+        </table>
+		
+        <table>
+		
+        <h1>3)<u>Wewnętrzny</u> arkusz stylów.</h1>
+        <tr>
+        <td> <textarea cols="80" rows="7">
+<head>
+<style type="text/css">
+selektor1 { cecha: wartość; cecha2: wartość2... }
+selektor2 { cecha: wartość; cecha2: wartość2... }
+</style>
+</head>
+</textarea> </td> 
+        </tr>
+        </table>
+		
+        <table>
+        <h1>4)<u>Alternatywny</u> arkusz stylów.</h1>
+                <tr>
+            <td> <textarea cols="90" rows="7">
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+<link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+            </textarea> </td> 
+        </tr>
+        </table>
+		
+        <table>
+        <h1>5)<u>Import</u> arkusza stylów.</h1>
+                <tr>
+            <td> <textarea cols="80" rows="4">
+<style type="text/css">
+		@import url(adres zewnętrznego arkusza stylów);
+</style>
+            </textarea> </td> 
+        </tr>
+
+
+        </table>
+
+</body>
