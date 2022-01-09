@@ -583,10 +583,6 @@
 	  <input type="button" name="przycisk" value="z74_bogdziewicz" onclick="WinOpen_boogdziewicz74(' ')">
 					
 	  <input type="button" name="przycisk" value="z75_bogdziewicz" onclick="WinOpen_boogdziewicz75(' ')">
-	  
-	  <input type="button" name="przycisk" value="z76_bogdziewicz" onclick="WinOpen_boogdziewicz76(' ')">
-	  
-	  <input type="button" name="przycisk" value="z77_bogdziewicz" onclick="WinOpen_boogdziewicz77(' ')">
   </form>
   </body>
 </html>

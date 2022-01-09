@@ -1,0 +1,29 @@
+<html>
+<body>
+<script language="JavaScript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+function wybor()
+{
+var x=prompt("Wczytaj kolor x=","");
+if ((x==1) || ( x=="czerwony"))
+{document.write("<font color=red size=7> wczytales kolor czerwony </font>"+"<br>");}
+
+else if ((x==2) || (x=="niebieski"))
+{document.write("<font color=blue size=1> wczytales niebieski</font>"+"<br>");}
+
+}
+</script>
+</div>
+</body>
+<h2><font color=green >MENU</font></h2><br>
+<font color=red>1.Czerwony</font> <br>
+<font color=blue>2.Niebieski</font> <br>
+<input type="button" name="przycisk" value="Wybierz kolor " onclick="wybor()"><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</html>

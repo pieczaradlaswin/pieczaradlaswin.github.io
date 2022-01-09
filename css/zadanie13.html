@@ -1,0 +1,31 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<div style="color:navy;font-size:60px;">
+ <script language="JavaScript">
+var d1_bog=prompt("Podaj A=","");
+var d2_bog=prompt("Podaj B=","");
+ var a=parseFloat(d1_bog);
+ var b=parseFloat(d2_bog);
+var s;
+var c;
+var d;
+var e;
+var g;
+s=a*a*a;
+c= 3*(Math.pow(a, 2))*b;
+d=3*a*(Math.pow(b, 2));
+e=+Math.pow(b, 3);
+g=s+c+d+e;
+ document.write("A="+a+" B="+b+ "  <br>  ("+a+"+"+b+")^3="+a+"^3+3*(("+a+")^2)*("+b+")+3*("+a+")*(("+b+")^2)+"+b+"^3="+s+"+"+c+"+"+d+"+"+e+"="+g+"<br>");
+
+ </script>
+</div><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij_Laskowska47()
+{
+window.close()
+}
+</script>
+<script language="JavaScript">
+var liczba1=prompt("R="," ");
+var R=parseFloat(liczba1);
+var licznik_las=0;
+
+for(var i=-Math.round(R)-1; i<=Math.round(R)+1; i++){
+for(var j=-Math.round(R)-1; j<=Math.round(R)+1; j++){
+var d=Math.sqrt(i*i+j*j);
+if(d<=R){
+licznik_las++;
+}
+document.write("("+i+","+j+")"+"  ");
+}
+document.write("<br>");
+}
+document.write("N="+licznik_las+"  ");
+</script>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Laskowska47()"/>
+</body>
+</html>

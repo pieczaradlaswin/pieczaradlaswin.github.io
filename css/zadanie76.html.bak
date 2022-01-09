@@ -1,0 +1,38 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<script language="JavaScript">
+var x=prompt("podaj liczbę A=","");
+var y=prompt("podaj liczbę B=","");
+a=parseInt(x);
+b=parseInt(y);
+
+if(a<b)
+{
+	for(i=a;i<=b;i++)
+	{
+	if (i%2!=0) 
+	document.write("<font size=6 color=green>"+i+"<br>");
+	}
+}
+else (b<a)
+{
+	for(j=a;j<=b;j--)
+	{
+	if (j%2!=0) 
+	document.write("<font size=3 color=blue>"+j+"<br>");
+	}
+}
+if (a==b)
+{
+confirm("Brak obliczen ");
+}
+</script>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

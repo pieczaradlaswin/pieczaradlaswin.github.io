@@ -1,0 +1,19 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij_Laskowska52()
+{
+window.close()
+}
+</script>
+<script language="JavaScript">
+var a=prompt("podaj liczbę =","");
+for(i=2 ;i<=a;i++)
+{
+if (i%2==0)
+{document.write(""+i+"<br>");}
+}
+</script>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Laskowska52()"/>
+</body>
+</html>

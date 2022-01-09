@@ -1,0 +1,68 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Cztery sposoby <b><u>wyprowadzania</u></b> danych na stronę:<br>
+1. z użyciem dokument.write()<br>
+2. z użyciem okienka alert()<br>
+3. do okienek formularza<br>
+4. do tabeli<br><br>
+
+<b>Co to jest funkcja?</b><br>
+1. Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,<br>
+2. Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,<br>
+3. Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np.<br>
+suma_kry(a, b),<br>
+4. Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return.<br><br>
+
+<b>Wybrane metody obiektu document</b><br>
+<table border>
+   <tr>
+      <td><center><b>metoda</b></center></td> <td><center><b>opis</b></center></td> 
+   </tr>
+   <tr>
+      <td>getElementById(„id”) </td> <td>dostęp do wszystkich elementów o konkretnej
+wartości atrybutu id </td> 
+   </tr>
+   <tr>
+      <td>getElementByTagName(„znacznik”) </td> <td>dostęp do wszystkich elementów o typie
+znacznika, np. P lub DIV </td> 
+   </tr>
+   <tr>
+      <td>getElementByName(„nazwa”) </td> <td>dostęp do wszystkich elementów o konkretnej
+wartości atrybutu </td> 
+   </tr>
+</table>
+<br><br>
+<b><u>Właściwości tak pobranego elementu to:</u></b><br>
+- <b>innerHTML</b> – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w
+tabeli,<br>
+- <b>innerText </b>– umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie,<br>
+- <b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.<br>
+Przykład:<br>
+<textarea>
+<!DOCTYPE html>
+ <head>
+ <title> Przykłady dostępu do elementów </title>
+ <meta charset="utf-8">
+ <style type="text/css">
+ .wyroznienieCzerwone { color: Red; font-weight: 600; }
+ </style>
+ </head>
+ <body>
+ <div id="nazwa"></div>
+ <script>
+ document.getElementById("nazwa").innerHTML = "Witaj";
+ document.getElementById("nazwa").className = "wyroznienieCzerwone";
+ </script>
+</body>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij"/>
+</body>
+</html>

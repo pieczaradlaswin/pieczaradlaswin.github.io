@@ -1,0 +1,33 @@
+<html>
+
+ <body>
+ <div style="color:green;font-size:44px;">
+ <script language="JavaScript">
+ var d1_bog=prompt("dzien koncowy:","");
+ var d2_bog=prompt("dzien poczaatkowy:","");
+ 
+ var g1_bog=prompt("godzina 1:","");
+ var g2_bog=prompt("godzina 2:","");
+ 
+ var suma;
+ var sek;
+ var godziny;
+ var dni;
+ 
+ var a=parseFloat(d1_bog);
+ var b=parseFloat(d2_bog);
+ 
+ var c=parseFloat(g1_bog);
+ var d=parseFloat(g2_bog);
+
+ dni=d1_bog-d2_bog;
+ godziny=(g2_bog-g1_bog)*3600;
+ sek=dni*24*60*60;
+ suma=sek-godziny;
+
+ document.write("od dnia: "+a+" godziny: "+c+" do dnia: "+b+" godziny: "+d+" minelo: "+suma+" sekund");
+ </script>
+ </div>
+ </body>
+ 
+</html>

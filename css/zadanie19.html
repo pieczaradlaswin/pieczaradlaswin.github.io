@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>
+Obliczanie pola i obwodu prostokata
+</title>
+ <script language="JavaScript">
+function Pole_bogdziewicz(a,b)
+{
+ a_dana_bog=parseFloat(a)
+ b_dana_bog=parseFloat(b)
+ pole_wynik=a_dana_bog * b_dana_bog
+ document.getElementsByName('ppa')[0].value=pole_wynik.toFixed(2); /* na dokument */
+ alert("Pole="+pole_wynik.toFixed(2)+" cm"); /*do okna Alert */
+ wyprowadz_pole_bog.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obwod_bogdziewicz(a,b)
+{
+ a_dana_bog=parseFloat(a)
+ b_dana_bog=parseFloat(b)
+ Obw_wynik=a_dana_bog+b_dana_bog+a_dana_bog+b_dana_bog
+ document.getElementsByName('obc')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm^2");
+ wyprowadz_obwod_bog.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+ </head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+Obliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="obwod_bogdziewicz(this.wys.value,this.dl.value);
+Pole_bogdziewicz(this.wys.value,this.dl.value);return false">
+Podaj a=
+<input size="6" name="wys">
+Podaj b=
+<input size="6" name="dl">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Obw=
+<input size="6" name="ppa">
+Pp=
+<input size="6" name="obc">
+</form>
+<table>
+<tr id="wyprowadz_pole_bog"></tr>
+<tr id="wyprowadz_obwod_bog"></tr>
+</table><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

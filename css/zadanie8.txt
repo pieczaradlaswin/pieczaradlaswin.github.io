@@ -1,0 +1,17 @@
+<html>
+<body>
+<div style="color:green;font-size:44px;">
+<script language="JavaScript">
+var d1_bog=prompt("dzien koncowy:","");
+var d2_bog=prompt("dzien poczaatkowy:","");
+var suma;
+var sekundy;
+var a=parseFloat(d1_bog);
+var b=parseFloat(d2_bog);
+suma=a-b;
+sekundy=suma*86400;
+document.write("minelo:"+a+"dni - "+b+"dni = "+sekundy+" sekund <br>");
+</script>
+</div>
+</body>
+</html>

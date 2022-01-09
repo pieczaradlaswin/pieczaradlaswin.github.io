@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <head>
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ <script language="JavaScript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+ </head>
+ 
+<body>
+
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function suma_bog(a, b) {
+ return a + b;
+ }
+ function odejmowanie_bog(a, b) {
+ return a - b;
+ }
+ function mnozenie_bog(a, b) {
+ return a * b;
+ }
+ function od_kwadratu_bog(a, b) {
+ return Math.pow(a,b);
+ return Math.pow(b,a);
+ }
+ function do_kwadratu_bog(a, b) {
+ return Math.pow(b,a);
+ }
+
+</script>
+<script language="JavaScript">
+document.write("suma="+suma_bog(a,b)+"<br>");
+</script><br>
+<script language="JavaScript">
+document.write("różnica="+odejmowanie_bog(a,b)+"<br>");
+</script><br>
+<script language="JavaScript">
+document.write("iloczyn="+mnozenie_bog(a,b)+"<br>");
+</script><br>
+<script language="JavaScript">
+document.write("do kwadratu="+od_kwadratu_bog(a,b)+"<br>");
+</script><br>
+<script language="JavaScript">
+document.write("do kwadratu="+do_kwadratu_bog(a,b)+"<br>");
+</script><br>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij"/>
+</body>
+</html>

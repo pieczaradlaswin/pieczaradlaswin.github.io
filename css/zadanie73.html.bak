@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>
+Przykład petli
+</title>
+<script type="text/javascript">
+function okno_zamknij_Laskowska50()
+{
+window.close()
+}
+</script>
+<script language="JavaScript">
+for ( var i=0; i<=39; i++)
+{
+if(i%5==0){ var r=confirm("Naciśnij klawisz");}
+w=i*i+i+41;
+document.write
+("i="+i+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+"w("+i+")="+w+"<br>");
+}
+</script>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Laskowska50()"/>
+</head>
+<body>
+</body>
+</html>

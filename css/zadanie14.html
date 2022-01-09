@@ -1,0 +1,46 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<div style="color:navy;font-size:44px;">
+<script language="JavaScript">
+/* Autorka: Wiktoria Bogdziewicz 3F2*/
+var N0_bog=prompt("Podaj ilosc=","");
+var t_bog=prompt("Podaj lata: ","");
+var No=parseFloat(N0_bog);
+var t=parseFloat(t_bog);
+var T_bog=prompt("Podaj czas po jakim zostanie polowa pierwiastka:","");
+var T=parseFloat(T_bog);
+var lambda=Math.LN2/T;
+var N=Math.pow((1/2),t/T)*No;
+</script>
+
+
+<script language="JavaScript">
+document.write("N0="+No+"[sztuk]");
+</script><br>
+
+<script language="JavaScript">
+document.write("t="+t+"[lat]");
+</script><br>
+
+<script language="JavaScript">
+document.write("T1/2="+T+"[lat]");
+</script><br>
+
+<script language="JavaScript">
+document.write("Lambda="+lambda.toFixed(7)+"[1/rok]");
+</script><br>
+
+<script language="JavaScript">
+document.write("N="+N.toFixed(7)+"[sztuk]");
+</script><br>
+
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

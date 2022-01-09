@@ -1,0 +1,21 @@
+<html>
+<body>
+<script language="JavaScript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var rok_gaj=prompt("od ktorego roku javascript jest w uzyciu? ","");
+document.write("Wczytany rok:"+rok_gaj+"<br>");
+if (rok_gaj==1995)
+{document.write("<font size=4 color=blue>Brawo znasz rok od kiedy działa Javasript"+"<br>");}
+else
+{document.write("<font size=7 color=red>Źle, musisz jeszcze poczytać"+"<br>");}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

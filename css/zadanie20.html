@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>
+Obliczenie pola oraz obwodu trapez równoramiennego
+</title>
+ <script language="JavaScript">
+function Pow_laskowska(a,b,h)
+{
+ a_dana_las=parseFloat(a)
+ b_dana_las=parseFloat(b)
+ h_dana_las=parseFloat(h)
+ pole_wynik=(1/2*(a_dana_las+b_dana_las))*h_dana_las
+ document.getElementsByName('ppa')[0].value=pole_wynik.toFixed(2); /* na dokument */
+ alert("Pole="+pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ wyprowadz_pole_las.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obw_laskowska(a,b,h)
+{
+ a_dana_las=parseFloat(a)
+ b_dana_las=parseFloat(b)
+ h_dana_las=parseFloat(h)
+ x=Math.abs(a-b)
+ g=1/2*x
+ c=Math.pow(g,2)+Math.pow(h,2)
+ c_las=Math.sqrt(c)
+ Obw_wynik=a_dana_las+b_dana_las+c_las+c_las
+ document.getElementsByName('obc')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm");
+ wyprowadz_obwod_las.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+ </head>
+<body>
+<script type="text/javascript">
+function okno_zamknij_Laskowska29()
+{
+window.close()
+}
+</script>
+Obliczenie pola oraz obwodu trapez równoramiennego
+<br> <br>
+<form name="formularz" action="..." onsubmit="obw_laskowska(this.wys.value,this.dl.value,this.do.value);
+Pow_laskowska(this.wys.value,this.dl.value,this.do.value);return false">
+Podaj a=
+<input size="6" name="wys">
+Podaj b=
+<input size="6" name="dl">
+Podaj h=
+<input size="6" name="do">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pp=
+<input size="6" name="ppa">
+Obw=
+<input size="6" name="obc">
+</form>
+<table>
+<tr id="wyprowadz_pole_las"></tr>
+<tr id="wyprowadz_obwod_las"></tr>
+</table><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Laskowska29()"/>
+</body>
+</html>
