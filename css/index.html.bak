@@ -475,7 +475,22 @@
   window.open("zadanie77.html","okienko77","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
   }
   </script>
-
+   <script language="JavaScript">
+  
+  function WinOpen_boogdziewicz24()
+  {
+  window.open("zadanie24.html","okienko24","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+  }
+  </script>
+     <script language="JavaScript">
+  
+  function WinOpen_boogdziewicz25()
+  {
+  window.open("zadanie25.html","okienko25","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+  }
+  </script>
+  
+  
   </head>
   <body>
   
@@ -583,6 +598,10 @@
 	  <input type="button" name="przycisk" value="z74_bogdziewicz" onclick="WinOpen_boogdziewicz74(' ')">
 					
 	  <input type="button" name="przycisk" value="z75_bogdziewicz" onclick="WinOpen_boogdziewicz75(' ')">
+	  
+	  <input type="button" name="przycisk" value="z24_bogdziewicz" onclick="WinOpen_boogdziewicz24(' ')">
+	    
+	  <input type="button" name="przycisk" value="z25_bogdziewicz" onclick="WinOpen_boogdziewicz25(' ')">
   </form>
   </body>
 </html>
