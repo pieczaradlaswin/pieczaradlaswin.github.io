@@ -1,0 +1,34 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij()
+{
+window.close()
+}
+35
+ function samochod(marka_k,model_k,rejestracja_k)//początek konstruktora
+{
+this.marka=marka_k;
+this.model=model_k;
+this.rejestracja=rejestracja_k;
+}//koniec konstruktora
+ samochod.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.marka + ' ' + this.model+ ' ' + this.rejestracja);
+ };
+var samochod1 = new samochod("Audi", "A7", "GD2I37P"); // nowy obiekt osoba1
+var samochod2 = new samochod('Reno', 'Clio 5', 'GA54G23');
+samochod1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+samochod2.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("samochod pierwszy"+" "+samochod1.marka+" "+samochod1.model+" "+samochod1.rejestracja+"<br>");
+ document.write("samochod drugi"+" "+samochod2.marka+" "+samochod2.model+" "+samochod2.rejestracja);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe 
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+
+var samochod_wyswietl_bogd = {
+marka: 'Audi',
+model: 'A7',
+rejestracja: 'GD2I37P',
+pokaz: function ()
+{
+document.write(this.marka + ' ' + this.model+' ' +this.rejestracja)
+}
+}
+samochod_wyswietl_bogd.pokaz();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
